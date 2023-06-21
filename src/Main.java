@@ -54,6 +54,7 @@ public class Main {
         usuario2.setFechaNacimiento("1996-12-21");
         cliente2.setNombres("José Ignacio");
 
+        //MUESTRA LOS DATOS DE LOS CLIENTES SIN MÉTODOS ACCESORES
         System.out.println( "Cliente 1: \n" + nuevo_cliente.obtenerNombre());
         System.out.println( "Sistema Salud :" + nuevo_cliente.obtenerSistemaSalud());
         System.out.println( "Cliente 2: \n" + cliente2.obtenerNombre());
@@ -89,5 +90,42 @@ public class Main {
         System.out.println("Edad      : " + cliente2.getEdad());
         System.out.println("Salud     : " + cliente2.getSalud());
         System.out.println("AFP       : " + cliente2.getAfp());
+
+
+        // Imprime los valores del objeto Capacitación con métodos accesores
+        System.out.println("Capacitación 1");
+        System.out.println("id         : " + nueva_capacitacion.getIdentificador());
+        System.out.println("RUT Cliente: " + nueva_capacitacion.getRut_cliente());
+        System.out.println("Día         : " + nueva_capacitacion.getDia());
+        System.out.println("Hora         : " + nueva_capacitacion.getHora());
+        System.out.println("Lugar        : " + nueva_capacitacion.getLugar());
+        System.out.println("Duración         : " + nueva_capacitacion.getDuracion());
+        System.out.println("Cant. Asistentes         : " + nueva_capacitacion.getCantidad_asistentes());
+
+
+        System.out.println("Capacitación 2");
+        System.out.println("id         : "+capacitacion2.getIdentificador());
+        System.out.println("RUT Cliente: "+capacitacion2.getRut_cliente());
+        System.out.println("Día        : "+capacitacion2.getDia());
+        System.out.println("Hora       : "+capacitacion2.getHora());
+        System.out.println("Lugar      : "+capacitacion2.getLugar());
+        System.out.println("Duración   : "+capacitacion2.getDuracion());
+        System.out.println("Cant.Asiste: "+capacitacion2.getCantidad_asistentes());
+
+
+        // Imprime los usuarios creados utilizando los metodos accesores
+
+        System.out.println("Usuario 1");
+        System.out.println("Nombre       : " + nuevo_usuario.getNombre() );
+        System.out.println("RUN          : " + nuevo_usuario.getRun() );
+        System.out.println("Fecha Nacimiento      : " + nuevo_usuario.getFechaNacimiento() );
+
+
+        System.out.println("Usuario 2");
+        System.out.println("Nombre      :"+usuario2.getNombre());
+        System.out.println("RUN         :"+usuario2.getRun());
+        System.out.println("Fecha Nac.  :"+usuario2.getFechaNacimiento());
+
+
     }
 }
